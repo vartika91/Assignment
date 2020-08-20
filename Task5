@@ -1,0 +1,51 @@
+#Ques1:
+#should not be a multiple of 3 but a multiple of 7
+'''l=list(range(0,51))
+result=filter(lambda x:x%3!=0,l)
+print(list(result))
+result1=filter(lambda x:x%7==0,l)
+print(list(result1))'''
+
+#Ques2:
+'''def mult(l=[]):
+    for i in range(len(l)):
+        l[i]=l[i]*l[i]
+        print(list(l[i]))
+mult([1,2,3,4,5,6])
+
+result=map(lambda x:x**2,l)
+print(list(result))'''
+
+#Ques3:
+'''str1=['PytHOn']
+result=[x for x in range(len(str1)) if str1[x].isupper()]
+print(result)'''
+
+#Ques4:
+'''Student = ['Smit', 'Jaya', 'Rayyan']
+
+capital = ['CSE', 'Networking', 'Operating System']
+
+print(list(zip(Student,capital)))
+dict1=dict(zip(Student,capital))
+print(dict1)'''
+
+#Ques6:
+'''def function3():
+    str1="Consultadd Training"
+    n=str1[::-1]
+    yield(n)
+res=function3()
+print(next(res))'''
+
+#Ques7:
+'''def div(a,b): #existing function
+    print(a/b)   
+
+def smart_div(func): #creating a new function to add extra features in the existing feature
+    if a<b: # numerator should always be greater than denominator and if not then swap them
+        a,b=b,a
+        return func(a,b)
+    return inner
+div=smart_div(div)
+div(2,4)'''
