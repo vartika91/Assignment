@@ -1,0 +1,115 @@
+#Ques1:
+def USIN():
+    str1=input("Enter the string")
+    print(str1[::-1])
+
+USIN()
+
+#Ques2:
+def upper_lower(str1):
+    case={"upper":0,"lower":0}
+    for i in str1:
+        if i.isupper():
+            case['upper']=case['upper']+1
+        if i.islower():
+            case['lower']=case['lower']+1
+    print(str1)
+    print('upper:',case['upper'])
+    print('lower:',case['lower'])
+
+upper_lower('Python Online Sch')
+
+#Ques5:
+def seq_of_lines(str1,str2):
+    print(str1)
+    print(str2)
+    print(str1.upper())
+    print(str2.upper())
+
+seq_of_lines('Hello world','Practice makes perfect')
+
+#Ques6:
+def calculateSum (a,b):
+	s = int(a) + int(b)# print sum
+	return s
+
+num1 = "10"
+num2 = "20"
+
+sum = calculateSum (num1, num2)
+print("Sum = ", sum)
+
+#Ques7:
+def function1():
+    str1=input('Enter the string1')
+    str2=input('Enter the string2')
+    if len(str1)>len(str2):
+        print(len(str1))
+    else:
+        print(len(str2))
+    if len(str1)==len(str2):
+        print(str1)
+        print(str2)
+
+function1()
+
+#Ques8:
+def function2(list1=[]):
+    list1=list(range(0,21))
+    for i in list1:
+        a=i*i
+        list1.append(a)
+    print(list1)
+    tup1=tuple(list1)
+    print(tup1)
+function2([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,18,20])
+
+
+#Ques9:
+def showNumbers(limit=[]):
+    limit=list(range(0,7))
+    for i in limit:
+        if i%2==0:
+            print(i,'EVEN')
+        else:
+            print(i,'ODD')
+showNumbers([0,1,2,3,4,5,6])
+
+#Ques10:
+l=list(range(1,21))
+result=filter(lambda x:x%2==0,l)
+print(list(result))
+
+#Ques11:
+l=list(range(1,11))
+result=map(lambda x:x**2,l)
+print(list(result))
+
+result=[1,4,9,16,25,36,49,64,81,100] #what if I don't mention result?
+even_num=filter(lambda x:x%2==0,result)
+print(list(even_num))'''
+
+#QUes12:
+'''try:
+    a=5
+    b=0
+    print(a/b)
+except:
+    print('You cannot divide any number by 0')
+
+#Ques14:
+def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)
+
+def a():
+    try:
+        f(x,4)
+    finally:
+        print('after f')
+    print('after f?')
+a()
